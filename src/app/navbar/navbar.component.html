@@ -1,0 +1,28 @@
+<div
+  class="topnav responsive"
+  id="myTopnav">
+    <a  routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Top Games</a>
+    <a  routerLink="/new-games" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">New Games</a>
+    <a href="#slots">Slots</a>
+    <a href="#jackpots">Jackpots</a>
+    <a href="#live">Live</a>
+    <a href="#blackjack">Blackjack</a>
+    <a href="#roulette">Roulette</a>
+    <a href="#table">Table</a>
+    <a href="#poker">Poker</a>
+    <a href="#other">Other</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
